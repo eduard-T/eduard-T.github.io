@@ -1,0 +1,343 @@
+<!-- What's up ya friggin nerds? -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicons -->
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicons/site.webmanifest">
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Jura:wght@300;500;700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- FontAwesome -->
+
+  <script
+  src="https://kit.fontawesome.com/c53f7e277a.js"
+  crossorigin="anonymous"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-176838517-1"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-176838517-1");
+  </script>
+
+  <!-- Document Title -->
+
+  <title>eduard_tupy</title>
+</head>
+<body class="wrapper">
+
+  <!-- Header -->
+
+  <header id="header">
+
+    <!-- Navigation -->
+
+    <nav class="desktopNav">
+      <span class="highlight">//</span>
+      <ul class="navigation">
+        <li class="navItem" onclick="scrollToSection('aboutSection')">
+          About
+        </li>
+        <li class="navItem" onclick="scrollToSection('projectSection')">
+          Projects
+        </li>
+        <li class="navItem" onclick="scrollToSection('socialSection')">
+          Socials
+        </li>
+      </ul>
+    </nav>
+
+    <nav class="mobileNav">
+      <div class="menuToggle">
+        <input type="checkbox" id="burger" onchange="toggleMenu()"/>
+          <span></span>
+          <span></span>
+          <span></span>
+        <ul>
+          <li class="navItem" onclick="scrollToSection('aboutSection')">
+            About
+          </li>
+          <li class="navItem" onclick="scrollToSection('projectSection')">
+            Projects
+          </li>
+          <li class="navItem" onclick="scrollToSection('socialSection')">
+            Socials
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Banner -->
+
+    <section class="titleContainer">
+      <div class="headerAsset">
+        <img
+          id="waveAsset"
+          src="assets/liquid_wave.png"
+          alt="black and white liquid wave swirling from top right to bottom left by Alexey Boldin"
+        />
+      </div>
+      <h1 class="title">Eduard Tupy</h1>
+      <p class="subTitle">Software Engineer</p>
+      <ul class="titleSocials">
+        <li>
+          <a
+            href="https://github.com/eduard-T"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-github" aria-label="GitHub icon"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/eduard-tupy/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-linkedin" aria-label="LinkedIn icon"></i
+          ></a>
+        </li>
+      </ul>
+    </section>
+  </header>
+
+  <!-- Main -->
+
+  <main>
+
+    <!-- About -->
+
+    <section id="aboutSection" class="firstSection">
+      <div class="personalContent">
+        <h2 class="sectionTitle">About</h2>
+        <p>
+          As a zealous software engineer, I thrive on understanding users' needs and have a genuine empathy for their experiences. My expertise lies in designing and building robust foundations for complex systems, ensuring seamless digital experiences that drive customer satisfaction to new heights. At <a href="https://nascentdigital.com/" target="_blank" rel="noopener noreferrer">Nascent</a>, I am actively engaged in crafting innovative solutions that not only meet but exceed user expectations.
+        </p>
+        <p>
+          Being a continuous learner, I tend to stay ahead of the curve by exploring and integrating emerging technologies into my work. With a relentless drive to create transformative digital experiences, I am committed to shaping the future of user-centric and architecturally efficient technologies.
+        </p>
+      </div>
+      <div class="personalAsset">
+        <img src="assets/stack.png" alt="vertical stack of technology by Josh Warren">
+      </div>
+    </section>
+
+    <!-- Projects -->
+
+    <section id="projectSection" class="secondSection">
+      <h2 class="sectionTitle">Projects</h2>
+
+      <!-- Project One -->
+
+      <div class="projectItem">
+        <div class="projectAsset">
+          <img
+            src="assets/driver_manager.png"
+            alt="Open laptop with a placeholder image of the driver manager website"
+          />
+        </div>
+        <div class="projectContent">
+          <p class="languages">
+            Next.js | Tailwind | Nest.js | Knex
+          </p>
+          <h3 class="projectTitle">Lodr <span class="greenText">[Refactoring]</span></h3>
+          <p>
+            A logistics operations system where users acting as dispatchers can assign orders for drivers to fulfill for clients. Orders can be dragged and dropped to drivers or between them, and existing orders can be unassigned and then edited.
+          </p>
+          <div class="links">
+            <div class="button disabled">
+              <a
+                href="https://lodr-cfd9fc88e37a.herokuapp.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Offline
+              </a>
+            </div>
+            <div class="button">
+              <a
+                href="https://github.com/eduard-T/Lodr"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Repository
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Two -->
+
+      <div class="projectItem">
+        <div class="projectAsset">
+          <img
+            src="assets/knots.png"
+            alt="Open laptop with a placeholder image of the goal management website"
+          />
+        </div>
+        <div class="projectContent">
+          <p class="languages">
+            React | Redux | Express | PostgreSQL
+          </p>
+          <h3 class="projectTitle">Knots</h3>
+          <p>
+            A goal management app that allows users to set and track their tasks. Once registered, a user can create, modify, and delete goals tied to their account. Users' accounts can be modified or deleted through a profile screen.
+          </p>
+          <div class="links">
+            <div class="button disabled">
+              <a
+                href="https://knots-3671dbf3e40b.herokuapp.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Offline
+              </a>
+            </div>
+            <div class="button">
+              <a
+                href="https://github.com/eduard-T/Knots"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Repository
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Three -->
+
+      <div class="projectItem">
+        <div class="projectAsset">
+          <img
+            src="assets/spltr.png"
+            alt="Open laptop with a placeholder image of the Spltr website"
+          />
+        </div>
+        <div class="projectContent">
+          <p class="languages">React | CSS | Firebase</p>
+          <h3 class="projectTitle">Spltr</h3>
+          <p>
+            A simple bill splitting application that works with any number of people. Spltr will take your group size, the bill total, tip percentage, and split the bill evenly between all members. Historical bills are saved and can be removed.
+          </p>
+          <div class="links">
+            <div class="button">
+              <a
+                href="https://eduard-t.github.io/Spltr/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Homepage
+              </a>
+            </div>
+            <div class="button">
+              <a
+                href="https://github.com/eduard-T/Spltr"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Repository
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Socials -->
+
+    <section id="socialSection" class="thirdSection">
+      <ul class="socialContainer">
+        <li>
+          <a
+            href="https://twitter.com/EduardTupy"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-twitter" aria-label="Twitter icon"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://medium.com/@eduard.tupy"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-medium" aria-label="Medium blog icon"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://calendly.com/eduard-tupy/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="far fa-calendar-alt" aria-label="Calendly icon"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/eduard-T"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-github" aria-label="GitHub icon"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/eduard-tupy/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-linkedin" aria-label="LinkedIn icon"></i
+          ></a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+
+  <footer>
+    <div class="footer">
+      <p>Copyright &copy; <span id="year"></span></p>
+      <span class="highlight">//</span>
+      <p>Eduard Tupy</p>
+    </div>
+  </footer>
+
+  <!-- Page Loader -->
+
+  <div id="pageLoader" class="loaderWrapper">
+    <span class="loader"></span>
+  </div>
+
+  <!-- JavaScript -->
+
+  <script src="scripts.js"></script>
+</body>
+</html>
