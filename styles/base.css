@@ -9,9 +9,10 @@
 }
 
 html {
+    cursor: default;
     background-color: var(--neutral-100);
     shape-rendering: geometricPrecision;
-    cursor: default;
+    scrollbar-color: var(--neutral-70) var(--neutral-100);
     text-wrap: pretty;
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
