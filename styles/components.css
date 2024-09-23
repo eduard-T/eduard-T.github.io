@@ -3,8 +3,8 @@
 .hero__description,
 .projects__description,
 .project-entry__description {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: clamp(18px, 4vw, 20px);
+    line-height: clamp(22px, 4vw, 28px);
     font-weight: 400;
 }
 
@@ -24,7 +24,7 @@
 
 .hero__title {
     font-size: clamp(40px, 6vw, 72px);
-    line-height: 54px;
+    line-height: clamp(28px, 6vw, 54px);
     letter-spacing: -1.25px;
     font-family: 'Bungee Hairline', cursive;
     color: var(--brand);
@@ -33,7 +33,7 @@
 
 .hero__subtitle {
     display: inline-block;
-    font-size: clamp(18px, 3vw, 32px);
+    font-size: clamp(18px, 4vw, 32px);
     line-height: 36px;
     font-family: 'Jura', sans-serif;
     font-weight: 700;
@@ -50,16 +50,13 @@
 .hero__icon-link {
     width: 32px;
     height: 32px;
+    fill: var(--neutral-50);
+    transition: all 200ms ease-in;
 
-    & svg {
-        fill: var(--neutral-50);
-        transition: all 200ms ease-in;
-
-        &:hover,
-        &:focus-visible {
-            fill: var(--brand);
-            transform: scale(1.1);
-        }
+    &:hover,
+    &:focus-visible {
+        fill: var(--brand);
+        transform: scale(1.1);
     }
 }
 
@@ -187,11 +184,8 @@ footer {
 /* Page Loader */
 
 .loader__wrapper {
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    left: 0;
     position: fixed;
+    inset: 0;
     z-index: 9999;
     display: flex;
     justify-content: center;
@@ -205,9 +199,9 @@ footer {
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 6rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    max-width: 64px;
+    margin-top: 24px;
+    margin-bottom: 24px;
 
     &:before,
     &:after {
@@ -215,20 +209,20 @@ footer {
         position: absolute;
         border-radius: 50%;
         animation: pulseOut 1.8s ease-in-out infinite;
-        filter: drop-shadow(0 0 1rem rgba(var(--neutral-0), 0.75));
+        filter: drop-shadow(0 0 24px rgba(var(--neutral-0), 0.75));
     }
 }
 
 .loader:before {
     width: 100%;
     padding-bottom: 100%;
-    box-shadow: inset 0 0 0 1rem var(--neutral-0);
+    box-shadow: inset 0 0 0 24px var(--neutral-0);
     animation-name: pulseIn;
 }
 
 .loader:after {
-    width: calc(100% - 2rem);
-    padding-bottom: calc(100% - 2rem);
+    width: calc(100% - 32px);
+    padding-bottom: calc(100% - 32px);
     box-shadow: 0 0 0 0 var(--neutral-0);
 }
 
