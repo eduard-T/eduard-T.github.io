@@ -1,0 +1,31 @@
+:root {
+    --brand: #C0FF33;
+    --neutral-0: #FFFFFF;
+    --neutral-10: #E8E8E8;
+    --neutral-30: #BBBBBB;
+    --neutral-50: #777777;
+    --neutral-70: #404040;
+    --neutral-100: #000000;
+}
+
+html {
+    background-color: var(--neutral-100);
+    shape-rendering: geometricPrecision;
+    cursor: default;
+    text-wrap: pretty;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    color: var(--neutral-10);
+    font-family: 'Quicksand', sans-serif;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1240px;
+    padding-right: 24px;
+    padding-left: 24px;
+}
