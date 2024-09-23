@@ -23,7 +23,7 @@
 }
 
 .hero__title {
-    font-size: clamp(40px, 6vw, 70px);
+    font-size: clamp(40px, 6vw, 72px);
     line-height: 54px;
     letter-spacing: -1.25px;
     font-family: 'Bungee Hairline', cursive;
@@ -32,7 +32,7 @@
 }
 
 .hero__subtitle {
-    display:inline-block;
+    display: inline-block;
     font-size: clamp(18px, 3vw, 32px);
     line-height: 36px;
     font-family: 'Jura', sans-serif;
@@ -56,7 +56,7 @@
         transition: all 200ms ease-in;
 
         &:hover,
-        &:focus {
+        &:focus-visible {
             fill: var(--brand);
             transform: scale(1.1);
         }
@@ -79,8 +79,8 @@
 }
 
 .projects__headline {
-    font-size: clamp(32px, 5vw, 48px);
-    line-height: 36px;
+    font-size: 40px;
+    line-height: 24px;
     letter-spacing: -1.25px;
     font-family: 'Bungee Hairline', cursive;
     color: var(--brand);
@@ -88,7 +88,7 @@
 }
 
 .projects__description {
-    padding-top: 24px;
+    padding-top: 16px;
     max-width: 940px;
 }
 
@@ -107,18 +107,18 @@
 
 .project-entry__content {
     width: 50%;
-    padding: 10px 50px;
+    padding: 8px 48px;
 }
 
 .project-entry__headline {
     font-size: 28px;
     font-weight: 700;
     color: var(--brand);
-    padding: 16px 0;
+    padding: 12px 0;
 }
 
 .project-entry__tech-stack {
-    display:inline-block;
+    display: inline-block;
     font-size: 16px;
     word-spacing: 6px;
     color: var(--neutral-30);
@@ -140,7 +140,7 @@
     transition: all 200ms ease-in;
 
     &:hover,
-    &:focus {
+    &:focus-visible {
         cursor: pointer;
         background-color: var(--neutral-0);
         transform: scale(1.025);
@@ -172,7 +172,7 @@ footer {
 
 .footer__copyright,
 .footer__author {
-    display:inline-block;
+    display: inline-block;
     font-size: 14px;
     color: var(--neutral-30);
 }
