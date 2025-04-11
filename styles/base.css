@@ -1,18 +1,19 @@
 :root {
-    --brand: #C0FF33;
+    --accent: #C0FF33;
     --neutral-0: #FFFFFF;
     --neutral-10: #E8E8E8;
-    --neutral-30: #BBBBBB;
+    --neutral-30: #A0A0A0;
     --neutral-50: #777777;
     --neutral-70: #404040;
+    --neutral-90: #161616;
     --neutral-100: #000000;
 }
 
 html {
     cursor: default;
-    background-color: var(--neutral-100);
+    background-color: var(--neutral-90);
     shape-rendering: geometricPrecision;
-    scrollbar-color: var(--neutral-70) var(--neutral-100);
+    scrollbar-color: var(--neutral-70) var(--neutral-90);
     text-wrap: pretty;
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
