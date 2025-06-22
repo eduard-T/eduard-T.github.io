@@ -222,7 +222,6 @@ footer {
 /* Media Queries */
 
 @media (max-width: 960px) {
-
     .hero {
         flex-direction: column;
         margin-top: 24px;
@@ -256,5 +255,17 @@ footer {
 @media (max-width: 540px) {
     .hero__cover-image {
         width: 100%;
+    }
+
+    .projects {
+        margin-top: 100px;
+    }
+
+    .project-entry {
+        padding-top: 100px;
+    }
+
+    footer {
+        margin-top: 100px;
     }
 }
