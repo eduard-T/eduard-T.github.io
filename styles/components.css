@@ -3,8 +3,8 @@
 .hero__description,
 .projects__description,
 .project-entry__description {
-    font-size: clamp(18px, 4vw, 20px);
-    line-height: clamp(22px, 4vw, 28px);
+    font-size: clamp(16px, 4vw, 18px);
+    line-height: clamp(21px, 4vw, 25px);
     font-weight: 400;
 }
 
@@ -20,10 +20,11 @@
 
 .hero__content-container {
     flex: 1;
+    padding: 100px 0;
 }
 
 .hero__title {
-    font-size: clamp(40px, 6vw, 72px);
+    font-size: clamp(36px, 6vw, 72px);
     line-height: clamp(28px, 6vw, 54px);
     letter-spacing: -1.25px;
     font-family: 'Bungee Hairline', monospace;
@@ -35,7 +36,6 @@
 .hero__subtitle {
     display: inline-block;
     font-size: clamp(18px, 4vw, 32px);
-    line-height: 36px;
     font-family: 'Jura', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -45,7 +45,7 @@
     display: flex;
     flex-direction: row;
     gap: 16px;
-    margin: 24px 0;
+    margin: clamp(16px, 2vw, 24px) 0;
 }
 
 .hero__icon-link {
@@ -225,6 +225,14 @@ footer {
     .hero {
         flex-direction: column;
         margin-top: 24px;
+    }
+
+    .hero__content-container {
+      padding: 0;
+    }
+
+    .hero__title {
+      margin-left: -4px;
     }
 
     .hero__cover-image {

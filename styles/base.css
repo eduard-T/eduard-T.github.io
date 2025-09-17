@@ -10,6 +10,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
     cursor: default;
     background-color: var(--neutral-90);
     shape-rendering: geometricPrecision;
