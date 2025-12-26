@@ -20,6 +20,9 @@
 
     <!-- Document Title -->
     <title>eduard_tupy</title>
+
+    <!-- The Juice -->
+    <script defer type="text/javascript" src="scripts.js"></script>
   </head>
 
   <body class="wrapper">
@@ -60,13 +63,10 @@
           </a>
         </div>
         <p class="hero__description">
-          With 7 years of experience building various digital systems, I’ve developed extensive expertise through every layer of the stack, with a focus on designing secure, scalable, and maintainable applications. I have worked on optimizing server-side rendering logic, implementing caching layers to reduce response times, and structuring APIs to handle high-volume traffic with reliability. My approach often involves profiling backend services to identify bottlenecks, refining database schemas to support complex business rules, and applying design patterns like CQRS and event-driven architecture to simplify growing transactional complexity. On the client side, I have built reusable component libraries and design systems that streamline development while keeping interfaces accessible and consistent.
+          With over <span id="YEAR_EXP"></span> years of experience building a wide range of digital systems and products, I’ve developed extensive expertise through every layer of the stack; focusing on designing performant, scalable, and secure applications that are a delight to use and maintain. I've curated and orchestrated semantic design systems that bring consistency across departments and projects. I've architected APIs that enforce fail-safe design patterns and contextual organization of both data structures and business logic. I always focus on building test strategies rooted in real-world scenarios and systemic weaknesses, not simply hypotheticals created to satisfy test coverage. I've built up and mentored many peers, from junior to senior, in an attempt to excel them beyond what they thought they were capable of.
           <br>
           <br>
-          I think exceptional engineering means making intentional choices at every layer of the stack to balance performance, clarity, and resilience, and I take pride in creating systems that are both technically sound and adaptable for the future.
-          <br>
-          <br>
-          I'm also of the opinion that even the most complex problems can be solved once they're truly understood and simplified, and I enjoy the process of untangling complexity, finding clarity in the chaos, and transforming challenges into opportunities to build something meaningful.
+          Whether it's people or programming, I believe that even the most trivial challenges can be solved once they're truly understood and simplified. I enjoy untangling complexity, finding clarity in the chaos, and transforming obstacles into learning opportunities that lead to real impact.
         </p>
       </div>
       <div class="hero__cover-image">
@@ -78,32 +78,40 @@
     <section class="projects">
       <span class="projects__line-break"></span>
       <p class="projects__description">
-        As time goes on, I'll create applications that help solidify or capture my understanding of a new language, framework, or tool - some of which are available below.
+        Here are some of the systems and products I've helped bring to life, each representing a unique technical challenge.
       </p>
 
       <!-- Project One -->
       <div class="project-entry">
         <div class="project-entry__thumbnail">
           <img
-            src="https://placehold.co/1000x600/404040/777?font=pt-sans&text=In+Progress"
-            alt="thumbnail of a cat recognition application for litter boxes called 'Sgnl'."
+            src="https://placehold.co/1000x600/404040/777?font=pt-sans&text=Coming+Soon"
+            alt=""
           />
         </div>
         <div class="project-entry__content">
           <span class="project-entry__tech-stack">
-            Django | Tailwind | HTML
+            React Native - Nativewind - Apollo Client - AWS
           </span>
-          <h3 class="project-entry__headline">Sgnl</h3>
+          <h3 class="project-entry__headline">Journie Rewards</h3>
           <p class="project-entry__description">
-            A program assisted by AI that observes a video feed to recognize and accurately identify when a cat enters a litter box, which then triggers a response. The response can be a simple notification or an automated task.
+            A loyalty rewards application that gives customers the ability to earn points through purchases or contests that can then be used to redeem rewards. The core branding and application architecture was completely overhauled to allow for more clear and contextual navigational structure, a more robust application lifecycle, and a much more efficient data layer. The greatest challenge was hammering out a proper semantic design system with abstractions so that it can be translated into identical components for both the design and engineering teams.
           </p>
           <a
-            class="project-entry__link disabled"
-            href="https://github.com/eduard-T/Knots"
+            class="project-entry__link"
+            href="https://apps.apple.com/ca/app/journie-rewards/id1440857272"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Repository
+            App store
+          </a>
+          <a
+            class="project-entry__link"
+            href="https://play.google.com/store/apps/details?id=ca.journie.app&hl=en_CA"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Google Play
           </a>
         </div>
       </div>
@@ -112,25 +120,33 @@
       <div class="project-entry">
         <div class="project-entry__thumbnail">
           <img
-            src="assets/knots.png"
-            alt="thumbnail of a goal management application called 'Knots'."
+            src="https://placehold.co/1000x600/404040/777?font=pt-sans&text=Coming+Soon"
+            alt=""
           />
         </div>
         <div class="project-entry__content">
           <span class="project-entry__tech-stack">
-            React | Redux | Express | PostgreSQL
+            React Native - React - NestJS - Postgres
           </span>
-          <h3 class="project-entry__headline">Knots</h3>
+          <h3 class="project-entry__headline">Telus MyPet</h3>
           <p class="project-entry__description">
-            A goal management app that allows users to set and track their tasks. Once registered, a user can create, modify, and delete goals tied to their account. Users' accounts can be modified or deleted through a profile screen.
+            A virtual veterinarian application that provides care to cats and dogs through consultations via video call for a wide range of non-urgent issues. The idea started as a secret project called "Wolfhound" that represented a whole ecosystem of three client applications and a single API. Along with the mobile app, there was a portal for vets and vet techs where they can answer calls and manage their schedule, an internal operations portal to handle business needs and customer requests, and an API exposing separate interfaces based on the consumer. The most difficult challenge was implementing user-facing flows that supported GDPR-driven data purging within a transaction to ensure rollback safety for regulatory compliance.
           </p>
           <a
             class="project-entry__link"
-            href="https://github.com/eduard-T/Knots"
+            href="https://apps.apple.com/ca/app/telus-health-mypet/id1610392294"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Repository
+            App store
+          </a>
+          <a
+            class="project-entry__link"
+            href="https://play.google.com/store/apps/details?id=com.telus.mypet&hl=en_CA"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Google Play
           </a>
         </div>
       </div>
@@ -139,25 +155,63 @@
       <div class="project-entry">
         <div class="project-entry__thumbnail">
           <img
-            src="assets/driver_manager.png"
-            alt="thumbnail of a driver manager application called 'Lodr'."
+            src="https://placehold.co/1000x600/404040/777?font=pt-sans&text=Coming+Soon"
+            alt=""
           />
         </div>
         <div class="project-entry__content">
           <span class="project-entry__tech-stack">
-            Next | Tailwind | Nest | Knex
+            NextJS - Tailwind - NestJS - Knex - Postgres
           </span>
-          <h3 class="project-entry__headline">Lodr</h3>
+          <h3 class="project-entry__headline">Nascent OS</h3>
           <p class="project-entry__description">
-            A logistics operations system where users acting as dispatchers can assign orders for drivers to fulfill for clients. Orders can be dragged and dropped to drivers or between them, and existing orders can be unassigned and then edited.
+            An internal management platform intended to improve and accelerate the growth of the organization. Those in leadership are able to manage resourcing for projects and track employee growth. For the employees, there is an interface to submit vacation days, see where they are in their own career ladder, and what they should focus on to get to the next level. Some complex challenges included redesigning the database schema to handle versioning of reference data used in performance metrics, and also creating a variation of the CQRS pattern to handle the growing complexity within the API as a result of the versioning.
+          </p>
+        </div>
+      </div>
+
+      <!-- Project Four -->
+      <div class="project-entry">
+        <div class="project-entry__thumbnail">
+          <img
+            src="https://placehold.co/1000x600/404040/777?font=pt-sans&text=Coming+Soon"
+            alt=""
+          />
+        </div>
+        <div class="project-entry__content">
+          <span class="project-entry__tech-stack">
+            ASP.NET - Optimizely - JavaScript - Bootstrap - HTML
+          </span>
+          <h3 class="project-entry__headline">Bausch+Lomb</h3>
+          <p class="project-entry__description">
+            A leading global eye health company providing a comprehensive range of vision care products that wanted to improve their digital presence in the European marketplace. The website was unique in a sense that it was built with .NET in conjunction with the Optimizely CMS. It served simple HTML pages with standard CSS, Bootstrap, and JavaScript when required. An interesting challenge came up when modifying our MVCs broke the existing references within the traditional CMS. It required meticulous organization and planning of what the models represent, how the controllers should handle interaction, and what the views should encapsulate. This was also an opportunity to mentor a few developers to create something outside a framework that became a comfort zone.
+          </p>
+        </div>
+      </div>
+
+      <!-- Project Five -->
+      <div class="project-entry">
+        <div class="project-entry__thumbnail">
+          <img
+            src="https://placehold.co/1000x600/404040/777?font=pt-sans&text=Coming+Soon"
+            alt=""
+          />
+        </div>
+        <div class="project-entry__content">
+          <span class="project-entry__tech-stack">
+            NextJS - Tailwind - GraphQL - Contentful
+          </span>
+          <h3 class="project-entry__headline">Nascent Homepage</h3>
+          <p class="project-entry__description">
+            A site rebuilt internally for a better public image to express what can be provided to potential clients. The website is connected to the Contentful CDN via their GraphQL API, and uses a variation of the semantic atomic design system that is constantly being improved. A very fun challenge was getting the changes from the CDN to drive the revalidation of the static content rendered by the server without having to redeploy the site itself. Since the only options for revalidation on Next.js were through timing or tags, I created an endpoint for a webhook to revalidate tagged content based on the type of tag that was changed within the CDN. This allowed surgical revalidation without affecting anything else.
           </p>
           <a
-            class="project-entry__link disabled"
-            href="https://github.com/eduard-T/Lodr"
+            class="project-entry__link"
+            href="https://www.nascentdigital.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Refactoring
+            Visit
           </a>
         </div>
       </div>
@@ -177,8 +231,5 @@
     <div id="LOADER_CONTAINER" class="loader__wrapper">
       <span id="LOADER" class="loader"></span>
     </div>
-
-    <!-- The Juice -->
-    <script src="scripts.js"></script>
   </body>
 </html>
