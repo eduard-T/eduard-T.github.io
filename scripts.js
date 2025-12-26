@@ -2,6 +2,7 @@
 const loaderContainer = document.getElementById('LOADER_CONTAINER')
 const loader = document.getElementById('LOADER')
 const yearText = document.getElementById('YEAR_FOOTER')
+const yearExpCount = document.getElementById('YEAR_EXP')
 
 
 // helpers
@@ -35,9 +36,25 @@ function setYear() {
   yearText.appendChild(document.createTextNode(currentYear))
 }
 
+function setExpInYears() {
+
+  const _MS_PER_YEAR = 1000 * 60 * 60 * 24 * 365
+
+  // grab year from date as string
+  const startDate = new Date(2018, 7).getTime()
+  const now = new Date().getTime()
+
+  // determine year count
+  const yearCount = Math.floor(Math.abs(now - startDate) / _MS_PER_YEAR)
+
+  // append the calculated value
+  yearExpCount.appendChild(document.createTextNode(yearCount.toString()))
+}
+
 
 // listeners
 window.addEventListener('load', () => {
+  setExpInYears()
   setYear()
   fadeOut()
 })
