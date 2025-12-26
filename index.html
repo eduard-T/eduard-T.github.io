@@ -203,7 +203,7 @@
           </span>
           <h3 class="project-entry__headline">Nascent Homepage</h3>
           <p class="project-entry__description">
-            A site rebuilt internally for a better public image to express what can be provided to potential clients. The website is connected to the Contentful CDN via their GraphQL API, and uses a variation of the semantic atomic design system that is constantly being improved. A very fun challenge was getting the changes from the CDN to drive the revalidation of the static content rendered by the server without having to redeploy the site itself. Since the only options for revalidation on Next.js were through timing or tags, I created an endpoint for a webhook to revalidate tagged content based on the type of tag that was changed within the CDN. This allowed surgical revalidation without affecting anything else.
+            A site rebuilt internally for a better public image to express what can be provided to potential clients. The website is connected to the Contentful CDN via their GraphQL API, and uses a variation of the semantic atomic design system that is constantly being improved. A very fun challenge was getting the changes from the CDN to drive the revalidation of the static content rendered by the server without having to redeploy the site itself. Since the only options for revalidation on Next.js were through timing or tags, I created an endpoint for a webhook to revalidate tagged content based on the type of tag that was changed within the CDN. This allowed on-demand surgical revalidation.
           </p>
           <a
             class="project-entry__link"
