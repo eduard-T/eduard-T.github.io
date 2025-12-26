@@ -1,7 +1,7 @@
 // bound elements
 const loaderContainer = document.getElementById('LOADER_CONTAINER')
 const loader = document.getElementById('LOADER')
-const yearText = document.getElementById('YEAR_FOOTER')
+const yearFooter = document.getElementById('YEAR_FOOTER')
 const yearExpCount = document.getElementById('YEAR_EXP')
 
 
@@ -33,7 +33,7 @@ function setYear() {
   const currentYear = new Date().getFullYear().toString()
 
   // append the current year
-  yearText.appendChild(document.createTextNode(currentYear))
+  yearFooter.appendChild(document.createTextNode(currentYear))
 }
 
 function setExpInYears() {
