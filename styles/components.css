@@ -284,6 +284,7 @@ footer {
 
     .project-entry__tech-stack {
         font-size: 10px;
+        color: var(--neutral-10);
     }
 
     footer {
@@ -293,5 +294,6 @@ footer {
     .footer__copyright,
     .footer__author {
         font-size: 10px;
+        color: var(--neutral-10);
     }
 }
