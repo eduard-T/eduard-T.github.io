@@ -120,7 +120,6 @@
 
 .project-entry__tech-stack {
     display: inline-block;
-    text-transform: uppercase;
     font-family: 'Bungee Hairline', monospace;
     font-weight: 700;
     font-size: 12px;
@@ -180,20 +179,21 @@ footer {
     font-weight: 700;
     justify-content: center;
     align-items: center;
-    padding: 10px 0;
+    padding: 8px 0;
     margin-top: 200px;
-    gap: 24px;
+    gap: 12px;
 }
 
 .footer__copyright,
 .footer__author {
     display: inline-block;
     font-size: 12px;
+    letter-spacing: 1px;
     color: var(--neutral-30);
 }
 
 .footer__divider {
-    font-size: 36px;
+    font-size: 32px;
     color: var(--accent);
 }
 
@@ -282,7 +282,16 @@ footer {
         padding-top: 100px;
     }
 
+    .project-entry__tech-stack {
+        font-size: 10px;
+    }
+
     footer {
         margin-top: 100px;
+    }
+
+    .footer__copyright,
+    .footer__author {
+        font-size: 10px;
     }
 }
