@@ -127,12 +127,16 @@
     color: var(--neutral-30);
 }
 
+.project-entry__link-container {
+    display: flex;
+    margin-top: 16px;
+    gap: 8px;
+}
+
 .project-entry__link {
     display: inline-block;
     text-align: center;
-    width: 140px;
-    margin-top: 16px;
-    margin-right: 8px;
+    flex-basis: 140px;
     font-size: 12px;
     font-weight: 900;
     color: var(--neutral-100);
@@ -280,6 +284,11 @@ footer {
 
     .project-entry {
         padding-top: 100px;
+    }
+
+    .project-entry__link {
+        flex-basis: 100%;
+        padding: 12px;
     }
 
     .project-entry__tech-stack {

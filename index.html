@@ -97,22 +97,24 @@
           <p class="project-entry__description">
             A loyalty rewards application that gives customers the ability to earn points through purchases or contests that can then be used to redeem rewards. The core branding and application architecture was completely overhauled to allow for more clear and contextual navigational structure, a more robust application lifecycle, and a much more efficient data layer. The greatest challenge was hammering out a proper semantic design system with abstractions so that it can be translated into identical components for both the design and engineering teams.
           </p>
-          <a
-            class="project-entry__link"
-            href="https://apps.apple.com/ca/app/journie-rewards/id1440857272"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            App store
-          </a>
-          <a
-            class="project-entry__link"
-            href="https://play.google.com/store/apps/details?id=ca.journie.app&hl=en_CA"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Google Play
-          </a>
+          <div class="project-entry__link-container">
+            <a
+              class="project-entry__link"
+              href="https://apps.apple.com/ca/app/journie-rewards/id1440857272"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              App store
+            </a>
+            <a
+              class="project-entry__link"
+              href="https://play.google.com/store/apps/details?id=ca.journie.app&hl=en_CA"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Google Play
+            </a>
+          </div>
         </div>
       </div>
 
@@ -132,22 +134,24 @@
           <p class="project-entry__description">
             A virtual veterinarian application that provides care to cats and dogs through consultations via video call for a wide range of non-urgent issues. The ecosystem comprised of three user applications and a single API. Besides the client app, there was a portal for veterinarians to answer calls and manage schedules, an internal operations portal to handle business needs and customer requests, and an API exposing separate interfaces based on the consumer. The most difficult challenge was implementing user-facing flows that supported GDPR-driven data purging within a transaction to ensure rollback safety for regulatory compliance.
           </p>
-          <a
-            class="project-entry__link"
-            href="https://apps.apple.com/ca/app/telus-health-mypet/id1610392294"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            App store
-          </a>
-          <a
-            class="project-entry__link"
-            href="https://play.google.com/store/apps/details?id=com.telus.mypet&hl=en_CA"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Google Play
-          </a>
+          <div class="project-entry__link-container">
+            <a
+              class="project-entry__link"
+              href="https://apps.apple.com/ca/app/telus-health-mypet/id1610392294"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              App store
+            </a>
+            <a
+              class="project-entry__link"
+              href="https://play.google.com/store/apps/details?id=com.telus.mypet&hl=en_CA"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Google Play
+            </a>
+          </div>
         </div>
       </div>
 
@@ -205,14 +209,16 @@
           <p class="project-entry__description">
             A site rebuilt internally for a better public image to express what can be provided to potential clients. The website is connected to the Contentful CDN via their GraphQL API, and uses a variation of the semantic atomic design system that is constantly being improved. A very fun challenge was getting the changes from the CDN to drive the revalidation of the static content rendered by the server without having to redeploy the site itself. Since the only options for revalidation on Next.js were through timing or tags, I created an endpoint for a webhook to revalidate tagged content based on the type of tag that was changed within the CDN. This allowed on-demand surgical revalidation.
           </p>
-          <a
-            class="project-entry__link"
-            href="https://www.nascentdigital.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Visit
-          </a>
+          <div class="project-entry__link-container">
+            <a
+              class="project-entry__link"
+              href="https://www.nascentdigital.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit
+            </a>
+          </div>
         </div>
       </div>
     </section>
