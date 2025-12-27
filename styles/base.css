@@ -15,7 +15,7 @@ html {
     background-color: var(--neutral-90);
     shape-rendering: geometricPrecision;
     scrollbar-color: var(--neutral-70) var(--neutral-90);
-    text-wrap: pretty;
+    text-wrap: balance;
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
