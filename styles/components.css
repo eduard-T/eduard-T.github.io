@@ -133,7 +133,7 @@
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: var(--neutral-50);
+    color: var(--neutral-30);
 }
 
 .project-entry__link-container {
