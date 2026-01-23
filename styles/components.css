@@ -24,13 +24,12 @@
 }
 
 .hero__title {
-    font-size: clamp(36px, 6vw, 72px);
-    line-height: clamp(28px, 6vw, 54px);
-    letter-spacing: -1.25px;
-    font-family: 'Bungee Hairline', monospace;
+    font-size: clamp(36px, 6vw, 64px);
+    line-height: clamp(28px, 6vw, 52px);
+    font-family: 'Pixelify Sans', sans-serif;
+    font-weight: 400;
     text-transform: uppercase;
     color: var(--accent);
-    margin-left: -6px;
 }
 
 .hero__subtitle {
@@ -119,9 +118,9 @@
 }
 
 .project-entry__headline {
-    font-family: 'Bungee Hairline', monospace;
+    font-family: 'Pixelify Sans', sans-serif;
     font-size: 28px;
-    font-weight: 700;
+    font-weight: 400;
     color: var(--accent);
     padding: 12px 0;
 }
@@ -182,9 +181,7 @@
 
 footer {
     display: flex;
-    font-family: 'Bungee Hairline', monospace;
     flex: 1;
-    font-weight: 700;
     justify-content: center;
     align-items: center;
     padding: 8px 0;
@@ -201,7 +198,7 @@ footer {
 }
 
 .footer__divider {
-    font-size: 32px;
+    font-size: 24px;
     color: var(--accent);
 }
 
@@ -242,10 +239,6 @@ footer {
 
     .hero__content-container {
       padding: 0;
-    }
-
-    .hero__title {
-      margin-left: -4px;
     }
 
     .hero__cover-image {
@@ -313,11 +306,5 @@ footer {
 
     footer {
         margin-top: 100px;
-    }
-
-    .footer__copyright,
-    .footer__author {
-        font-size: 10px;
-        color: var(--neutral-0);
     }
 }
