@@ -3,7 +3,7 @@
 .hero__description,
 .projects__description,
 .project-entry__description {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 21px;
     font-weight: 400;
 }
@@ -171,10 +171,14 @@
 
 .project-entry__thumbnail {
     width: 50%;
+}
 
-    img {
-        border-radius: 4px;
-    }
+.project-entry__thumbnail_asset {
+    border-radius: 3px;
+}
+
+.project-entry__thumbnail_desktop-asset {
+    border-radius: 0 0 3px 3px;
 }
 
 /* Footer */
